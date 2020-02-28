@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/wholder/JavaFxDynamicTexture3D/blob/master/images/JavaFxDynamicTexture3D.png"></p>
 
 ## JavaFxDynamicTexture3D
-JavaFxDynamicTexture3D demonsrtates how to dynamically create an animated texture in JavaFx and then use it to texture the surface of cube.
+JavaFxDynamicTexture3D demonsrtates how to dynamically create an animated, transparent texture in JavaFx and then use it to texture the surface of cube.
         
 Note: one curious artifact (at least in macOs) is that the animated bouncing ball displayed in the dynamic texture leaves a shadowy trail behind it as it moves that resembles motion blur.  While the effect is interesting in this case, it can cause problems for other types of textures you might want to generate dynamically.  I tried various methods to stop this from happening but, so far, I have not found a solution.
 
