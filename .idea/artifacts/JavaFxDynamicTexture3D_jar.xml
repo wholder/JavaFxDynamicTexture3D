@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JavaFxDynamicTexture3D:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFxDynamicTexture3D_jar</output-path>
+    <root id="archive" name="JavaFxDynamicTexture3D.jar">
+      <element id="module-output" name="JavaFxDynamicTexture3D" />
+    </root>
+  </artifact>
+</component>
