@@ -14,7 +14,8 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 /*
- *  This program whether a texture map iamge can be updated dynamically
+ *  This program demonstrates how animated  bouncing balls drawn into a dynamically-generated texture
+ * leave a shadowy trail behind as they move that resembles motion blur.
  */
 
 public class JavaFxDynamicTexture3D extends Application {
@@ -67,7 +68,7 @@ public class JavaFxDynamicTexture3D extends Application {
     WritableImage texture = canvas.snapshot(null, null);
     while (texture.getProgress() < 1) {
       try {
-        // Note: never gets here
+        // Note: never gets here, so the image is fully generated
         Thread.sleep(1);
       } catch (InterruptedException ex) {
         ex.printStackTrace();
@@ -117,6 +118,7 @@ public class JavaFxDynamicTexture3D extends Application {
       System.exit(0);
     });
     animate();
+    System.out.println("javafx.runtime.version: " + System.getProperty("java.version"));
   }
 
   public void animate () {
