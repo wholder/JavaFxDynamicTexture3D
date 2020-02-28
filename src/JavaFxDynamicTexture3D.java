@@ -16,6 +16,8 @@ import javafx.util.Duration;
 /*
  *  This program demonstrates how animated  bouncing balls drawn into a dynamically-generated texture
  * leave a shadowy trail behind as they move that resembles motion blur.
+ *
+ *  Reported to Oracle at https://bugreport.java.com/bugreport/ who have assigned it internal review ID of 9063830
  */
 
 public class JavaFxDynamicTexture3D extends Application {

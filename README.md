@@ -5,6 +5,8 @@ JavaFxDynamicTexture3D demonsrtates how to dynamically create an animated, trans
         
 Note: one curious artifact (at least in macOs) is that the animated bouncing ball displayed in the dynamic texture leaves a shadowy trail behind it as it moves that resembles motion blur.  While the effect is interesting in this case, it can cause problems for other types of textures you might want to generate dynamically.  I tried various methods to stop this from happening but, so far, I have not found a solution.
 
+I have reported this behavior to Oracle at https://bugreport.java.com/bugreport/ who have assigned it internal review ID of 9063830
+
 ### Requirements
 JavaFxDynamicTexture3D requires the Java 8 JRE, or later.  There is a [**Runnable JAR file**](https://github.com/wholder/JavaFxDynamicTexture3D/tree/master/out/artifacts/JavaFxDynamicTexture3D_jar) included in the checked in code that you can download.   On a Mac, just double click the `JavaFxDynamicTexture3D.jar` file and it should start (_see note below if this doesn't work_.)  
   
