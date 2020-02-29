@@ -14,10 +14,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 /*
- *  This program demonstrates how animated  bouncing balls drawn into a dynamically-generated texture
- * leave a shadowy trail behind as they move that resembles motion blur.
- *
- *  Reported to Oracle at https://bugreport.java.com/bugreport/ who have assigned it internal review ID of 9063830
+ *  This program demonstrates animated bouncing balls drawn into a dynamically-generated texture
  */
 
 public class JavaFxDynamicTexture3D extends Application {
@@ -53,6 +50,10 @@ public class JavaFxDynamicTexture3D extends Application {
   }
 
   private void updateBall () {
+    // Fill with black first to prevent ghosting
+    gc.setFill(Color.BLACK);
+    gc.fillRect(0, 0, canvas.getWidth(), canvas.getHeight());
+    // Fill with partially-transparent color
     gc.setFill(new Color(0.4, 0.4, 0.4, .5));
     gc.fillRect(0, 0, canvas.getWidth(), canvas.getHeight());
     // If ball reaches left or right edge, reverse direction
@@ -120,7 +121,7 @@ public class JavaFxDynamicTexture3D extends Application {
       System.exit(0);
     });
     animate();
-    System.out.println("javafx.runtime.version: " + System.getProperty("java.version"));
+    stage.setResizable(false);
   }
 
   public void animate () {
